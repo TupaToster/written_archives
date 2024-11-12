@@ -1,0 +1,1839 @@
+********************************************************************************
+***                            Micro-Cap 10.0.8.2                            ***
+***                                                                          ***
+***                                                                          ***
+***                          AC Analysis of model6                           ***
+********************************************************************************
+Limits
+======
+Frequency Range  Log 1E6,100
+Number of Points 1000
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      V
+Noise Output     i
+Run Options      Normal
+State Variables  Zero
+Operating Point  On
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  UP dc.value
+From       0.2
+To         2
+Step Value 0.2
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=.2                     ***
+*****************************************************
+
+Temperature=27 UP=.2
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.269f  3           200.000m 
+4             5.000   5             6.269f  6             6.269f 
+I             3.663m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.467p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      6.701m            3.495m
+GDS                    35.308u            9.704u
+
+Current Terms:
+ID                      3.663m            1.002m
+
+Voltage Terms:
+VGS                  -200.000m           -1.482 
+VDS                     4.800             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                     17.583m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.269p           -6.781p
+Id                      3.663m            1.002m
+Is                     -3.663m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.269f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   3.930E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.269p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.269f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.269p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000            -3.663m
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.269p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000           200.000m           10.000 
+Power DC Terms:
+PG                     18.316m         -732.642u           10.016m
+
+DC Pin Currents:
+ISource                -3.663m            3.663m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=.4                     ***
+*****************************************************
+
+Temperature=27 UP=.4
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.339f  3           400.000m 
+4             5.000   5             6.339f  6             6.339f 
+I             3.208m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.441p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      6.269m            3.495m
+GDS                    30.945u            9.704u
+
+Current Terms:
+ID                      3.208m            1.002m
+
+Voltage Terms:
+VGS                  -400.000m           -1.482 
+VDS                     4.600             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                     14.759m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.339p           -6.781p
+Id                      3.208m            1.002m
+Is                     -3.208m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.339f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.018E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.339p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.339f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.339p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000            -3.208m
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.339p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000           400.000m           10.000 
+Power DC Terms:
+PG                     16.042m           -1.283m           10.016m
+
+DC Pin Currents:
+ISource                -3.208m            3.208m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=.6                     ***
+*****************************************************
+
+Temperature=27 UP=.6
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.412f  3           600.000m 
+4             5.000   5             6.412f  6             6.412f 
+I             2.765m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.414p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      5.818m            3.495m
+GDS                    26.688u            9.704u
+
+Current Terms:
+ID                      2.765m            1.002m
+
+Voltage Terms:
+VGS                  -600.000m           -1.482 
+VDS                     4.400             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                     12.166m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.412p           -6.781p
+Id                      2.765m            1.002m
+Is                     -2.765m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.412f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.111E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.412p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.412f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.412p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000            -2.765m
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.412p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000           600.000m           10.000 
+Power DC Terms:
+PG                     13.825m           -1.659m           10.016m
+
+DC Pin Currents:
+ISource                -2.765m            2.765m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=.8                     ***
+*****************************************************
+
+Temperature=27 UP=.8
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.489f  3           800.000m 
+4             5.000   5             6.489f  6             6.489f 
+I             2.335m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.387p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      5.344m            3.495m
+GDS                    22.551u            9.704u
+
+Current Terms:
+ID                      2.335m            1.002m
+
+Voltage Terms:
+VGS                  -800.000m           -1.482 
+VDS                     4.200             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      9.806m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.489p           -6.781p
+Id                      2.335m            1.002m
+Is                     -2.335m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.489f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.210E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.489p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.489f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.489p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000            -2.335m
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.489p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000           800.000m           10.000 
+Power DC Terms:
+PG                     11.674m           -1.868m           10.016m
+
+DC Pin Currents:
+ISource                -2.335m            2.335m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=1                      ***
+*****************************************************
+
+Temperature=27 UP=1
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.570f  3             1.000  
+4             5.000   5             6.570f  6             6.570f 
+I             1.920m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.359p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      4.844m            3.495m
+GDS                    18.557u            9.704u
+
+Current Terms:
+ID                      1.920m            1.002m
+
+Voltage Terms:
+VGS                    -1.000            -1.482 
+VDS                     4.000             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      7.679m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.570p           -6.781p
+Id                      1.920m            1.002m
+Is                     -1.920m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.570f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.316E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.570p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.570f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.570p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                  -7.889E-031           -1.920m
+Power DC Terms:
+PG                 -5.183E-042            0.000 
+
+DC Pin Currents:
+ISource                -6.570p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             1.000            10.000 
+Power DC Terms:
+PG                      9.599m           -1.920m           10.016m
+
+DC Pin Currents:
+ISource                -1.920m            1.920m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    UP=1.2                     ***
+*****************************************************
+
+Temperature=27 UP=1.2
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.656f  3             1.200  
+4             5.000   5             6.656f  6             6.656f 
+I             1.523m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.330p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      4.313m            3.495m
+GDS                    14.734u            9.704u
+
+Current Terms:
+ID                      1.523m            1.002m
+
+Voltage Terms:
+VGS                    -1.200            -1.482 
+VDS                     3.800             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      5.787m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.656p           -6.781p
+Id                      1.523m            1.002m
+Is                     -1.523m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.656f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.430E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.656p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.656f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.656p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                   7.889E-031           -1.523m
+Power DC Terms:
+PG                  5.251E-042            0.000 
+
+DC Pin Currents:
+ISource                -6.656p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             1.200            10.000 
+Power DC Terms:
+PG                      7.615m           -1.828m           10.016m
+
+DC Pin Currents:
+ISource                -1.523m            1.523m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    UP=1.4                     ***
+*****************************************************
+
+Temperature=27 UP=1.4
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.749f  3             1.400  
+4             5.000   5             6.749f  6             6.749f 
+I             1.148m  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.300p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      3.743m            3.495m
+GDS                    11.119u            9.704u
+
+Current Terms:
+ID                      1.148m            1.002m
+
+Voltage Terms:
+VGS                    -1.400            -1.482 
+VDS                     3.600             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      4.134m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.749p           -6.781p
+Id                      1.148m            1.002m
+Is                     -1.148m           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.749f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.555E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.749p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.749f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.749p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000            -1.148m
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.749p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             1.400            10.000 
+Power DC Terms:
+PG                      5.742m           -1.608m           10.016m
+
+DC Pin Currents:
+ISource                -1.148m            1.148m           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    UP=1.6                     ***
+*****************************************************
+
+Temperature=27 UP=1.6
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.850f  3             1.600  
+4             5.000   5             6.850f  6             6.850f 
+I           801.560u  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.269p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      3.126m            3.495m
+GDS                     7.769u            9.704u
+
+Current Terms:
+ID                    801.560u            1.002m
+
+Voltage Terms:
+VGS                    -1.600            -1.482 
+VDS                     3.400             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      2.725m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.850p           -6.781p
+Id                    801.560u            1.002m
+Is                   -801.560u           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.850f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.692E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.850p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.850f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.850p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000          -801.560u
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.850p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             1.600            10.000 
+Power DC Terms:
+PG                      4.008m           -1.282m           10.016m
+
+DC Pin Currents:
+ISource              -801.560u          801.560u           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    UP=1.8                     ***
+*****************************************************
+
+Temperature=27 UP=1.8
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             6.961f  3             1.800  
+4             5.000   5             6.961f  6             6.961f 
+I           491.276u  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.237p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      2.446m            3.495m
+GDS                     4.767u            9.704u
+
+Current Terms:
+ID                    491.276u            1.002m
+
+Voltage Terms:
+VGS                    -1.800            -1.482 
+VDS                     3.200             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                      1.572m            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -6.961p           -6.781p
+Id                    491.276u            1.002m
+Is                   -491.276u           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        6.961f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   4.845E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       6.961p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        6.961f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  6.961p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                       0.000          -491.276u
+Power DC Terms:
+PG                      0.000             0.000 
+
+DC Pin Currents:
+ISource                -6.961p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             1.800            10.000 
+Power DC Terms:
+PG                      2.456m         -884.297u           10.016m
+
+DC Pin Currents:
+ISource              -491.276u          491.276u           -1.002m
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     UP=2                      ***
+*****************************************************
+
+Temperature=27 UP=2
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:                 V                VS   
+Using model:        GENERAL           GENERAL   
+A                    1.000 (*)         1.000 (*)
+DC                   0.000 (*)         0.000 (*)
+F                 10.000MEG         10.000MEG   
+PH                   0.000 (*)         0.000 (*)
+RP                   0.000 (*)         0.000 (*)
+RS                   1.000m(*)         1.000m(*)
+TAU                  0.000 (*)         0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:                J1                J2   
+Using model:         2N3070            2N3070   
+AF                 500.525m          500.525m   
+BETA                 2.954m            2.954m   
+BETATCE              0.000 (*)         0.000 (*)
+CGD                  2.784p            2.784p   
+CGS                  3.164p            3.164p   
+FC                 500.000m(*)       500.000m(*)
+IS                  10.000f(*)        10.000f(*)
+KF               4.998E-019        4.998E-019   
+LAMBDA              10.000m           10.000m   
+M                  500.000m(*)       500.000m(*)
+PB                   1.938             1.938    
+RD                   0.000 (*)         0.000 (*)
+RS                 286.385           286.385    
+T_ABS             UNDEFINED(*)      UNDEFINED(*)
+T_MEASURED        UNDEFINED(*)      UNDEFINED(*)
+T_REL_GLOBAL      UNDEFINED(*)      UNDEFINED(*)
+T_REL_LOCAL       UNDEFINED(*)      UNDEFINED(*)
+VTO                 -2.342            -2.342    
+VTOTC                0.000 (*)         0.000 (*)
+XTI                  3.000 (*)         3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2             7.086f  3             2.000  
+4             5.000   5             7.086f  6             7.086f 
+I           231.715u  N             4.992   9           616.466n 
+10            1.482   11           10.000   12            6.165f 
+13            0.000  
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                   J1                J2
+Using model:            2N3070            2N3070
+
+Capacitance Terms:
+CGS                     2.201p            2.288p
+CGD                     1.471p            1.472p
+
+Conductance Terms:
+GM                      1.679m            3.495m
+GDS                     2.251u            9.704u
+
+Current Terms:
+ID                    231.715u            1.002m
+
+Voltage Terms:
+VGS                    -2.000            -1.482 
+VDS                     3.000             3.509 
+VGD                    -5.000            -4.992 
+
+Power DC Terms:
+PD                    695.145u            3.515m
+PS                      0.000             0.000 
+
+DC Pin Currents:
+Ig                     -7.086p           -6.781p
+Id                    231.715u            1.002m
+Is                   -231.715u           -1.002m
+
+Condition:
+State                      SAT               SAT
+
+Device Variables:
+area                    1.000             1.000 
+vds                     0.000             0.000 
+vgs                     0.000             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  V.RS                RS                RG                RD
+V                        7.086f            1.482           616.466n            5.008 
+Power DC Terms:
+PD                   5.022E-026            1.485m        3.800E-019            5.016m
+
+DC Pin Currents:
+Ir                       7.086p            1.002m          616.466f            1.002m
+
+Device Variables:
+tc1                      0.000             0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000             0.000 
+
+
+Instance:                     R             VS.RS                R1
+V                     -616.466n            6.165f            0.000 
+Power DC Terms:
+PD                       0.004f        3.800E-026            0.000 
+
+DC Pin Currents:
+Ir                      -6.165p            6.165p            0.000 
+
+Device Variables:
+tc1                      0.000             0.000             0.000 
+tc2                      0.000             0.000             0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                    C1
+V                        1.482 
+Power DC Terms:
+PS                       0.000 
+
+DC Pin Currents:
+Ic                       0.000 
+
+Device Variables:
+ic                       0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                     V                VS
+Using model:            GENERAL           GENERAL
+V                        7.086f            6.165f
+Power DC Terms:
+PG                       0.000             0.000 
+
+DC Pin Currents:
+ISource                  7.086p            6.165p
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                    H                H1
+V                   7.889E-031         -231.715u
+Power DC Terms:
+PG                  5.590E-042            0.000 
+
+DC Pin Currents:
+ISource                -7.086p            0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                   UC                UP                V4
+V                       5.000             2.000            10.000 
+Power DC Terms:
+PG                      1.159m         -463.430u           10.016m
+
+DC Pin Currents:
+ISource              -231.715u          231.715u           -1.002m
+
+

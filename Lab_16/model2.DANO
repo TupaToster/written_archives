@@ -1,0 +1,107 @@
+********************************************************************************
+***                            Micro-Cap 10.0.8.2                            ***
+***                                                                          ***
+***                                                                          ***
+***                           Dynamic AC of model2                           ***
+***                           23.11.2022 12:50:14                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+AC Voltages at Frequency=1e+006 (Mag, Degrees)
+==============================================
+Node              Voltage  Node              Voltage 
+1                     0,0  S                     0,0 
+3                     0,0  E        5.186m,-372.441m 
+5              1,714.023p  6          15.833p,90.002 
+
+
+AC values for Diode (Mag, Degrees)
+==================================
+Instance:                     D1                  D2
+Using model:            $GENERIC            $GENERIC
+
+Power AC Terms:
+PD                           0,0          515.879n,0
+PS                           0,0          3.371n,-90
+
+AC Pin Currents:
+Id                           0,0    99.481u,-179.998
+
+Device Variables:
+area                      1.000               1.000 
+ic                        0.000               0.000 
+
+
+
+AC values for Resistor (Mag, Degrees)
+=====================================
+Instance:                      R1               ES.RS
+
+Power AC Terms:
+PD                      98.966u,0            9.897p,0
+
+AC Pin Currents:
+Ir                 99.481u,1.941m    99.481u,-179.998
+
+Device Variables:
+tc1                        0.000               0.000 
+tc2                        0.000               0.000 
+
+
+
+AC values for Capacitor (Mag, Degrees)
+======================================
+Instance:                      C1                  C2
+
+Power AC Terms:
+PS                            0,0          1.575f,-90
+
+AC Pin Currents:
+Ic                            0,0      99.481u,1.941m
+
+Device Variables:
+ic                         0.000               0.000 
+
+
+
+AC values for Sine Source (Mag, Degrees)
+========================================
+Instance:                      ES
+Using model:                 1MHZ
+
+Power AC Terms:
+PG                99.481u,-1.941m
+
+AC Pin Currents:
+ISource          99.481u,-179.998
+
+
+
+AC values for Dependent Source (Mag, Degrees)
+=============================================
+Instance:                      H
+
+Power AC Terms:
+PG                           0,0
+
+AC Pin Currents:
+ISource                      0,0
+
+
+
+AC values for SPICE Source (Mag, Degrees)
+=========================================
+Instance:                     I0                  I1
+
+Power AC Terms:
+PG                           0,0                 0,0
+
+AC Pin Currents:
+ISource                      0,0                 0,0
+
+

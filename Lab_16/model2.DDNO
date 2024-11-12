@@ -1,0 +1,121 @@
+********************************************************************************
+***                            Micro-Cap 10.0.8.2                            ***
+***                                                                          ***
+***                                                                          ***
+***                           Dynamic DC of model2                           ***
+***                           23.11.2022 12:50:22                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1           607.488m  S             0.000   3             0.000  
+E           100.607   5           110.607   6           110.607  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:               D1            D2
+Using model:      $GENERIC      $GENERIC
+
+Capacitance Terms:
+CAP                86.809p       20.259p
+
+Current Terms:
+ID                  1.000m       -1.000m
+
+Resistance Terms:
+REQ                51.728        51.729 
+
+Voltage Terms:
+VD                607.488m     -100.607 
+
+Power DC Terms:
+PD                607.488u      100.607m
+PS                  0.000         0.000 
+
+DC Pin Currents:
+Id                  1.000m       -1.000m
+
+Condition:
+State                   ON         ZENER
+
+Device Variables:
+area                1.000         1.000 
+ic                  0.000         0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1         ES.RS
+V                   10.000        -1.000u
+Power DC Terms:
+PD                  10.000m        1.000n
+
+DC Pin Currents:
+Ir                   1.000m       -1.000m
+
+Device Variables:
+tc1                  0.000         0.000 
+tc2                  0.000         0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1            C2
+V                  607.488m     -110.607 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                ES
+Using model:           1MHZ
+V                   -1.000u
+Power DC Terms:
+PG                   0.000 
+
+DC Pin Currents:
+ISource             -1.000m
+
+
+
+Operating Point for Devices of Type Dependent Source
+====================================================
+Instance:                H
+V                   0.000 
+Power DC Terms:
+PG                  0.000 
+
+DC Pin Currents:
+ISource             0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:               I0            I1
+V                -607.488m     -110.607 
+Power DC Terms:
+PG                607.488u      110.607m
+
+DC Pin Currents:
+ISource             1.000m        1.000m
+
+
