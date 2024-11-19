@@ -1,0 +1,61 @@
+ALSA lib pcm_dsnoop.c:567:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2722:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:404:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pcm_oss.c:404:(_snd_pcm_oss_open) Cannot open device /dev/dsp
+ALSA lib pcm_a52.c:1036:(_snd_pcm_a52_open) a52 is only for playback
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:481:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib confmisc.c:160:(snd_config_get_card) Invalid field card
+ALSA lib pcm_usb_stream.c:481:(_snd_pcm_usb_stream_open) Invalid card 'card'
+ALSA lib pcm_dsnoop.c:567:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+xopp-Message: 00:48:05.541: Plugin "MigrateFontSizes" UI initialized
+xopp-Message: 00:54:06.237: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 00:57:06.240: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:03:06.248: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:06:06.237: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:09:06.238: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:12:06.242: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:15:06.238: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:18:06.238: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:18:08.101: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:21:06.240: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:24:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:26:39.103: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:27:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:27:40.234: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:28:36.667: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:30:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:33:06.240: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:34:18.998: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:36:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:39:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:42:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:45:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:48:06.240: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:48:32.120: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:51:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:53:59.132: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:54:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 01:56:05.530: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 01:57:06.249: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:00:06.245: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:02:30.941: Discard impossible event - this is a sign of bugged hardware or drivers
+xopp-Message: 02:03:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:06:06.241: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:09:06.244: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:12:06.242: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:15:06.242: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:18:06.244: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:21:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:24:06.238: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:27:06.238: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:30:06.246: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:33:06.240: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:36:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:39:06.239: Autosaving to .anmeh_dz.autosave.xopp
+xopp-Message: 02:42:06.243: Autosaving to .anmeh_dz.autosave.xopp
