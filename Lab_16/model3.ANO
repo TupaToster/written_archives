@@ -1,28 +1,30 @@
 ********************************************************************************
-***                            Micro-Cap 10.0.8.2                            ***
+***                       Micro-Cap 12.2.0.5 (32 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
 ***                          AC Analysis of model3                           ***
 ********************************************************************************
 Limits
 ======
-Frequency Range  Log 1E7,100
-Number of Points 1000
-Temperature      Linear 27
-Maximum Change % 0.01
-Noise Input      V4
-Noise Output     n4
-Run Options      Normal
-State Variables  Zero
-Operating Point  On
+Frequency Range          Log 1E7,100
+Number of Points         1000
+Temperature              Linear 27
+Maximum Change %         0.01
+Noise Input              V1
+Noise Output             n1
+Run Options              Normal
+State Variables          Zero
+Operating Point          On
+Auto Scale Ranges        On
+Accumulate Plots         Off
+Ignore Expression Errors Off
 
 
 *****************************************************
-***                     Run=1                     ***
 ***                Temperature=27                 ***
 *****************************************************
 
-Run=1 Temperature=27 
+Temperature=27
 
 DC Operating Point Voltages
 ===========================

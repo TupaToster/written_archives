@@ -1,28 +1,34 @@
 ********************************************************************************
-***                            Micro-Cap 10.0.8.2                            ***
+***                       Micro-Cap 12.2.0.5 (32 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
 ***                       Transient Analysis of model2                       ***
-***                           23.11.2022 12:51:16                            ***
+***                          12/12/2024 3:17:20 PM                           ***
 ********************************************************************************
 Limits
 ======
-Time Range           1u
-Maximum Time Step    0
-Number of Points     51
-Temperature          Linear 27
-Retrace Runs         1
-Run Options          Normal
-State Variables      Zero
-Operating Point      On
-Operating Point Only Off
+Maximum Run Time           1u
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
 
 
 *****************************************************
 ***                Temperature=27                 ***
 *****************************************************
 
-Temperature=27 
+Temperature=27
 
 DC Operating Point Voltages
 ===========================
@@ -43,7 +49,7 @@ Current Terms:
 ID                  1.000m       -1.000m
 
 Resistance Terms:
-REQ                51.728        51.729 
+REQ                51.728        51.730 
 
 Voltage Terms:
 VD                607.488m     -100.607 
